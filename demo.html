@@ -3,8 +3,23 @@
   <head>
     <meta charset="UTF-8">
     <title>title</title>
+    <style>
+        /* Always set the map height explicitly to define the size of the div
+         * element that contains the map. */
+        #map {
+          height: 100%;
+        }
+        /* Optional: Makes the sample page fill the window. */
+        html, body {
+          height: 100%;
+          margin: 0;
+          padding: 0;
+        }
+      </style>    
   </head>
   <body>
+  <div id="map"></div>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARF6J4fYlpu5cKqUfcbdoQ0iH-fCYWIx8"></script>  
   <script>
     var options = {
     enableHighAccuracy: true,
@@ -13,16 +28,30 @@
     };
 
     function success(pos) {
-    var crd = pos.coords;
+        var crd = pos.coords;
 
-    console.log('Your current position is:');
-    console.log('Latitude : ' + crd.latitude);
-    console.log('Longitude: ' + crd.longitude);
-    console.log('More or less ' + crd.accuracy + ' meters.');
+        console.log('Your current position is:');
+        console.log('Latitude : ' + crd.latitude);
+        console.log('Longitude: ' + crd.longitude);
+        console.log('More or less ' + crd.accuracy + ' meters.');
+
+        var myLatLng = {lat: crd.latitude, lng: crd.longitude};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 12,
+            center: myLatLng
+        });
+
+        var marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            title: 'Hello World!'
+        });   
+
     };
-
+    
     function error(err) {
-    console.warn('ERROR(' + err.code + '): ' + err.message);
+        console.warn('ERROR(' + err.code + '): ' + err.message);
     };
 
     navigator.geolocation.getCurrentPosition(success, error, options);  
