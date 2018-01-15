@@ -19,8 +19,9 @@
   </head>
   <body>
   <div id="map"></div>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARF6J4fYlpu5cKqUfcbdoQ0iH-fCYWIx8"></script>  
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARF6J4fYlpu5cKqUfcbdoQ0iH-fCYWIx8"></script>  
   <script>
+      
     var options = {
     enableHighAccuracy: true,
     timeout: 5000,
@@ -49,7 +50,7 @@
         });   
 
     };
-    
+
     function error(err) {
         console.warn('ERROR(' + err.code + '): ' + err.message);
     };
