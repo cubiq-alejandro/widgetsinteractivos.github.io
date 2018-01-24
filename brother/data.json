@@ -1,0 +1,258 @@
+[
+    {
+      "nombre": "Atelier Brother",
+      "direccion": "Av Santa Fe 2739",
+      "localidad": "CABA",
+      "provincia": "CABA",
+      "telefono": "4824-7559 / 4823-5879",
+      "web": ""
+    },
+    {
+      "nombre": "Casa Vargas",
+      "direccion": "Sucre 372",
+      "localidad": "Cordoba",
+      "provincia": "Cordoba",
+      "telefono": "(0351) 424-2555",
+      "web": "https://www.casavargascordoba.com.ar/index.php/ver-mas/rotuladoras/portatiles.html"
+    },
+    {
+      "nombre": "DEIMOS - Tecnología Integrada",
+      "direccion": "Corrientes 395",
+      "localidad": "Mendoza",
+      "provincia": "Mendoza",
+      "telefono": "(0261) 4290942",
+      "web": ""
+    },
+    {
+      "nombre": "Digital Soluciones Informáticas S.R.L.",
+      "direccion": "Rosario de santa fé 128",
+      "localidad": "Barrio centro",
+      "provincia": "Cordoba",
+      "telefono": "(0351)-4221123 / (0351)- 4237348",
+      "web": ""
+    },
+    {
+      "nombre": "Reset-Tecnologo srl",
+      "direccion": "Parana 657",
+      "localidad": "CABA",
+      "provincia": "CABA",
+      "telefono": "5236-8030",
+      "web": ""
+    },
+    {
+      "nombre": "STAPLES",
+      "direccion": "Av. Santa Fe 2496",
+      "localidad": "Recoleta",
+      "provincia": "CABA",
+      "telefono": "(11) 4822-9995",
+      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras"
+    },
+    {
+      "nombre": "STAPLES",
+      "direccion": "Lavalle 565",
+      "localidad": "San Nicolás",
+      "provincia": "CABA",
+      "telefono": "(11) 4393-2506",
+      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras"
+    },
+    {
+      "nombre": "STAPLES",
+      "direccion": "Cabello 3352",
+      "localidad": "Palermo",
+      "provincia": "CABA",
+      "telefono": "(11) 4807-6747",
+      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras"
+    },
+    {
+      "nombre": "STAPLES",
+      "direccion": "Av. Elcano 3172",
+      "localidad": "Belgrano",
+      "provincia": "CABA",
+      "telefono": "(11) 4553-1059",
+      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras"
+    },
+    {
+      "nombre": "STAPLES",
+      "direccion": "Av. Scalabrini Ortiz 1896",
+      "localidad": "Palermo",
+      "provincia": "CABA",
+      "telefono": "(11) 4833-3500",
+      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras"
+    },
+    {
+      "nombre": "STAPLES",
+      "direccion": "Av. Córdoba 2033",
+      "localidad": "Recoleta",
+      "provincia": "CABA",
+      "telefono": "(11) 4961-5900",
+      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras"
+    },
+    {
+      "nombre": "STAPLES",
+      "direccion": "Av. Federico Lacroze 3078",
+      "localidad": "Colegiales",
+      "provincia": "CABA",
+      "telefono": "(11) 4551-4741",
+      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras"
+    },
+    {
+      "nombre": "STAPLES",
+      "direccion": "Av. Scalabrini Ortiz 339",
+      "localidad": "Palermo",
+      "provincia": "CABA",
+      "telefono": "(11) 4855-7880",
+      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras"
+    },
+    {
+      "nombre": "STAPLES",
+      "direccion": "Alicia Moreau de Justo 1390",
+      "localidad": "Puerto Madero",
+      "provincia": "CABA",
+      "telefono": "(11) 4342-9756",
+      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras"
+    },
+    {
+      "nombre": "STAPLES",
+      "direccion": "Viamonte 1500",
+      "localidad": "Tribunales",
+      "provincia": "CABA",
+      "telefono": "(11) 4519-8289",
+      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras"
+    },
+    {
+      "nombre": "STAPLES",
+      "direccion": "Av. Córdoba 4425",
+      "localidad": "Palermo",
+      "provincia": "CABA",
+      "telefono": "(11) 4773-8613",
+      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras"
+    },
+    {
+      "nombre": "STAPLES",
+      "direccion": "Av. San Martín 6946",
+      "localidad": "Villa Devoto",
+      "provincia": "CABA",
+      "telefono": "(11) 4136-2619",
+      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras"
+    },
+    {
+      "nombre": "STAPLES",
+      "direccion": "Guise 1921",
+      "localidad": "Palermo",
+      "provincia": "CABA",
+      "telefono": "(11) 4823-3926",
+      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras"
+    },
+    {
+      "nombre": "STAPLES",
+      "direccion": "Sarmiento 655",
+      "localidad": "Tandil",
+      "provincia": "BUENOS AIRES",
+      "telefono": "(0249) 442-6708",
+      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras"
+    },
+    {
+      "nombre": "STAPLES",
+      "direccion": "Rivadavia 2702",
+      "localidad": "Olavarría",
+      "provincia": "BUENOS AIRES",
+      "telefono": "02284-423114",
+      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras"
+    },
+    {
+      "nombre": "STAPLES",
+      "direccion": "San Nicolás 558",
+      "localidad": "Pergamino",
+      "provincia": "BUENOS AIRES",
+      "telefono": "(2477) 420187",
+      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras"
+    },
+    {
+      "nombre": "STAPLES",
+      "direccion": "Sarmiento 2685 (1er piso)",
+      "localidad": "Mar del Plata",
+      "provincia": "BUENOS AIRES",
+      "telefono": "(0223) 451-1151",
+      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras"
+    },
+    {
+      "nombre": "STAPLES",
+      "direccion": "Belgrano 362",
+      "localidad": "San Isidro",
+      "provincia": "BUENOS AIRES",
+      "telefono": "(11) 4747-0665",
+      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras"
+    },
+    {
+      "nombre": "Teorema",
+      "direccion": "Av. Santa Fe 4386",
+      "localidad": "CABA",
+      "provincia": "CABA",
+      "telefono": "4774-2046",
+      "web": "http://www.e-teorema.com/catalogo.php/4-tecnologia/1185-rotuladoras_y_etiquetadoras/3041-rotuladoras?buscar=h100"
+    },
+    {
+      "nombre": "Sodimac",
+      "direccion": "Ruta 8 y Ruta 202",
+      "localidad": "Malvinas Argentinas",
+      "provincia": "BUENOS AIRES",
+      "telefono": "",
+      "web": "http://www.sodimac.com.ar/sodimac-ar/search/?Ntt=rotuladora"
+    },
+    {
+      "nombre": "Sodimac",
+      "direccion": "San Martín 421",
+      "localidad": "San Martin",
+      "provincia": "BUENOS AIRES",
+      "telefono": "",
+      "web": "http://www.sodimac.com.ar/sodimac-ar/search/?Ntt=rotuladora"
+    },
+    {
+      "nombre": "Sodimac",
+      "direccion": "Av Don Bosco 2680",
+      "localidad": "San Justo",
+      "provincia": "BUENOS AIRES",
+      "telefono": "",
+      "web": "http://www.sodimac.com.ar/sodimac-ar/search/?Ntt=rotuladora"
+    },
+    {
+      "nombre": "Sodimac",
+      "direccion": "Av Vergara 1910",
+      "localidad": "Villa Tesei",
+      "provincia": "BUENOS AIRES",
+      "telefono": "",
+      "web": "http://www.sodimac.com.ar/sodimac-ar/search/?Ntt=rotuladora"
+    },
+    {
+      "nombre": "Sodimac",
+      "direccion": "Av del Libertador 77",
+      "localidad": "Vicente Lopez",
+      "provincia": "BUENOS AIRES",
+      "telefono": "",
+      "web": "http://www.sodimac.com.ar/sodimac-ar/search/?Ntt=rotuladora"
+    },
+    {
+      "nombre": "Sodimac",
+      "direccion": "Av Olivos 4051",
+      "localidad": "Tortuguitas",
+      "provincia": "BUENOS AIRES",
+      "telefono": "",
+      "web": "http://www.sodimac.com.ar/sodimac-ar/search/?Ntt=rotuladora"
+    },
+    {
+      "nombre": "Sodimac",
+      "direccion": "Av Colón 4880",
+      "localidad": "Barrio Villa Urquiza",
+      "provincia": "Cordoba",
+      "telefono": "",
+      "web": "http://www.sodimac.com.ar/sodimac-ar/search/?Ntt=rotuladora"
+    },
+    {
+      "nombre": "Sodimac",
+      "direccion": "Camino General Belgrano s/n entre 514 y 517",
+      "localidad": "La Plata",
+      "provincia": "BUENOS AIRES",
+      "telefono": "",
+      "web": "http://www.sodimac.com.ar/sodimac-ar/search/?Ntt=rotuladora"
+    }
+  ]
