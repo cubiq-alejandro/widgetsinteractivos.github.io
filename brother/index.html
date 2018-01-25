@@ -2,15 +2,12 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>title</title>
+    <title>Puntos de venta</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <style>
-        /* Always set the map height explicitly to define the size of the div
-         * element that contains the map. */
+    <style>        
         #map {
           height: 100%;
-        }
-        /* Optional: Makes the sample page fill the window. */
+        }        
         html, body {
           height: 100%;
           margin: 0;
@@ -20,12 +17,11 @@
           padding-right: 0px;
           padding-left: 0px;          
         }
-        .menu_overflow {
-          flex: 1 1 0; /* flex: 1, which you had before, is equivalent but doesn't work */
-          display: flex;
-          flex-direction: column;
-          overflow-y: scroll;
-        }        
+        .menu_overflow {          
+          height:800px;
+          overflow-y: scroll;    
+          -webkit-overflow-scrolling: touch;      
+        } 
       </style>    
   </head>
   <body>
@@ -92,7 +88,23 @@
                   </div>
                   <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
                   <small class="text-muted">Donec id elit non mi porta.</small>
-                </a>                          
+                </a> 
+                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">List group item heading</h5>
+                    <small class="text-muted">3 days ago</small>
+                  </div>
+                  <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                  <small class="text-muted">Donec id elit non mi porta.</small>
+                </a> 
+                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">List group item heading</h5>
+                    <small class="text-muted">3 days ago</small>
+                  </div>
+                  <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                  <small class="text-muted">Donec id elit non mi porta.</small>
+                </a>                                          
           </div>        
       </div>
     </div>    
@@ -105,9 +117,9 @@
   <script>
       
     var options = {
-    enableHighAccuracy: true,
-    timeout: 5000,
-    maximumAge: 0
+      enableHighAccuracy: true,
+      timeout: 5000,
+      maximumAge: 0
     };
 
     function success(pos) {
@@ -128,7 +140,7 @@
         var marker = new google.maps.Marker({
             position: myLatLng,
             map: map,
-            title: 'Hello World!'
+            title: 'Mi ubicación'
         });   
 
     };

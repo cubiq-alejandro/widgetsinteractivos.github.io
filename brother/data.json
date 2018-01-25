@@ -5,7 +5,9 @@
       "localidad": "CABA",
       "provincia": "CABA",
       "telefono": "4824-7559 / 4823-5879",
-      "web": ""
+      "web": "",
+      "latitud": -34.592908,
+      "longitud": -58.40548
     },
     {
       "nombre": "Casa Vargas",
@@ -13,7 +15,9 @@
       "localidad": "Cordoba",
       "provincia": "Cordoba",
       "telefono": "(0351) 424-2555",
-      "web": "https://www.casavargascordoba.com.ar/index.php/ver-mas/rotuladoras/portatiles.html"
+      "web": "https://www.casavargascordoba.com.ar/index.php/ver-mas/rotuladoras/portatiles.html",
+      "latitud": -31.410325,
+      "longitud": -64.187531
     },
     {
       "nombre": "DEIMOS - Tecnología Integrada",
@@ -21,7 +25,9 @@
       "localidad": "Mendoza",
       "provincia": "Mendoza",
       "telefono": "(0261) 4290942",
-      "web": ""
+      "web": "",
+      "latitud": -32.882687,
+      "longitud": -68.831231
     },
     {
       "nombre": "Digital Soluciones Informáticas S.R.L.",
@@ -29,7 +35,9 @@
       "localidad": "Barrio centro",
       "provincia": "Cordoba",
       "telefono": "(0351)-4221123 / (0351)- 4237348",
-      "web": ""
+      "web": "",
+      "latitud": -32.944717,
+      "longitud": -60.647858
     },
     {
       "nombre": "Reset-Tecnologo srl",
@@ -37,7 +45,9 @@
       "localidad": "CABA",
       "provincia": "CABA",
       "telefono": "5236-8030",
-      "web": ""
+      "web": "",
+      "latitud": -34.60107,
+      "longitud": -58.387952
     },
     {
       "nombre": "STAPLES",
@@ -45,7 +55,9 @@
       "localidad": "Recoleta",
       "provincia": "CABA",
       "telefono": "(11) 4822-9995",
-      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras"
+      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras",
+      "latitud": -34.59472,
+      "longitud": -58.402223
     },
     {
       "nombre": "STAPLES",
@@ -53,7 +65,9 @@
       "localidad": "San Nicolás",
       "provincia": "CABA",
       "telefono": "(11) 4393-2506",
-      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras"
+      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras",
+      "latitud": -34.602058,
+      "longitud": -58.374834
     },
     {
       "nombre": "STAPLES",
@@ -61,7 +75,9 @@
       "localidad": "Palermo",
       "provincia": "CABA",
       "telefono": "(11) 4807-6747",
-      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras"
+      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras",
+      "latitud": -34.581631,
+      "longitud": -58.408335
     },
     {
       "nombre": "STAPLES",
@@ -69,7 +85,9 @@
       "localidad": "Belgrano",
       "provincia": "CABA",
       "telefono": "(11) 4553-1059",
-      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras"
+      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras",
+      "latitud": -34.572967,
+      "longitud": -58.459052
     },
     {
       "nombre": "STAPLES",
@@ -77,7 +95,9 @@
       "localidad": "Palermo",
       "provincia": "CABA",
       "telefono": "(11) 4833-3500",
-      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras"
+      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras",
+      "latitud": -34.589137,
+      "longitud": -58.422288
     },
     {
       "nombre": "STAPLES",
@@ -85,7 +105,9 @@
       "localidad": "Recoleta",
       "provincia": "CABA",
       "telefono": "(11) 4961-5900",
-      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras"
+      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras",
+      "latitud": -34.599403,
+      "longitud": -58.396309
     },
     {
       "nombre": "STAPLES",
@@ -93,7 +115,9 @@
       "localidad": "Colegiales",
       "provincia": "CABA",
       "telefono": "(11) 4551-4741",
-      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras"
+      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras",
+      "latitud": -34.576935,
+      "longitud": -58.448686
     },
     {
       "nombre": "STAPLES",
@@ -101,7 +125,9 @@
       "localidad": "Palermo",
       "provincia": "CABA",
       "telefono": "(11) 4855-7880",
-      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras"
+      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras",
+      "latitud": -34.599572,
+      "longitud": -58.438079
     },
     {
       "nombre": "STAPLES",
@@ -109,7 +135,9 @@
       "localidad": "Puerto Madero",
       "provincia": "CABA",
       "telefono": "(11) 4342-9756",
-      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras"
+      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras",
+      "latitud": -34.613641,
+      "longitud": -58.366046
     },
     {
       "nombre": "STAPLES",
@@ -117,7 +145,9 @@
       "localidad": "Tribunales",
       "provincia": "CABA",
       "telefono": "(11) 4519-8289",
-      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras"
+      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras",
+      "latitud": -34.601862,
+      "longitud": -58.385343
     },
     {
       "nombre": "STAPLES",
@@ -125,7 +155,9 @@
       "localidad": "Palermo",
       "provincia": "CABA",
       "telefono": "(11) 4773-8613",
-      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras"
+      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras",
+      "latitud": -34.595167,
+      "longitud": -58.428237
     },
     {
       "nombre": "STAPLES",
@@ -133,7 +165,9 @@
       "localidad": "Villa Devoto",
       "provincia": "CABA",
       "telefono": "(11) 4136-2619",
-      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras"
+      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras",
+      "latitud": -34.591589,
+      "longitud": -58.511821
     },
     {
       "nombre": "STAPLES",
@@ -141,7 +175,9 @@
       "localidad": "Palermo",
       "provincia": "CABA",
       "telefono": "(11) 4823-3926",
-      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras"
+      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras",
+      "latitud": -34.59079,
+      "longitud": -58.412845
     },
     {
       "nombre": "STAPLES",
@@ -149,7 +185,9 @@
       "localidad": "Tandil",
       "provincia": "BUENOS AIRES",
       "telefono": "(0249) 442-6708",
-      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras"
+      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras",
+      "latitud": -37.324931,
+      "longitud": -59.136518
     },
     {
       "nombre": "STAPLES",
@@ -157,7 +195,9 @@
       "localidad": "Olavarría",
       "provincia": "BUENOS AIRES",
       "telefono": "02284-423114",
-      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras"
+      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras",
+      "latitud": -36.894465,
+      "longitud": -60.32319
     },
     {
       "nombre": "STAPLES",
@@ -165,7 +205,9 @@
       "localidad": "Pergamino",
       "provincia": "BUENOS AIRES",
       "telefono": "(2477) 420187",
-      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras"
+      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras",
+      "latitud": -33.894402,
+      "longitud": -60.573048
     },
     {
       "nombre": "STAPLES",
@@ -173,7 +215,9 @@
       "localidad": "Mar del Plata",
       "provincia": "BUENOS AIRES",
       "telefono": "(0223) 451-1151",
-      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras"
+      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras",
+      "latitud": -38.012297,
+      "longitud": -57.543921
     },
     {
       "nombre": "STAPLES",
@@ -181,7 +225,9 @@
       "localidad": "San Isidro",
       "provincia": "BUENOS AIRES",
       "telefono": "(11) 4747-0665",
-      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras"
+      "web": "https://www.staples.com.ar/new_find.asp?find_spec=rotuladoras",
+      "latitud": -34.469668,
+      "longitud": -58.510582
     },
     {
       "nombre": "Teorema",
@@ -189,7 +235,9 @@
       "localidad": "CABA",
       "provincia": "CABA",
       "telefono": "4774-2046",
-      "web": "http://www.e-teorema.com/catalogo.php/4-tecnologia/1185-rotuladoras_y_etiquetadoras/3041-rotuladoras?buscar=h100"
+      "web": "http://www.e-teorema.com/catalogo.php/4-tecnologia/1185-rotuladoras_y_etiquetadoras/3041-rotuladoras?buscar=h100",
+      "latitud": -34.580205,
+      "longitud": -58.423533
     },
     {
       "nombre": "Sodimac",
@@ -197,7 +245,9 @@
       "localidad": "Malvinas Argentinas",
       "provincia": "BUENOS AIRES",
       "telefono": "",
-      "web": "http://www.sodimac.com.ar/sodimac-ar/search/?Ntt=rotuladora"
+      "web": "http://www.sodimac.com.ar/sodimac-ar/search/?Ntt=rotuladora",
+      "latitud": -34.530711,
+      "longitud": -58.703362
     },
     {
       "nombre": "Sodimac",
@@ -205,7 +255,9 @@
       "localidad": "San Martin",
       "provincia": "BUENOS AIRES",
       "telefono": "",
-      "web": "http://www.sodimac.com.ar/sodimac-ar/search/?Ntt=rotuladora"
+      "web": "http://www.sodimac.com.ar/sodimac-ar/search/?Ntt=rotuladora",
+      "latitud": -34.587537,
+      "longitud": -58.518747
     },
     {
       "nombre": "Sodimac",
@@ -213,7 +265,9 @@
       "localidad": "San Justo",
       "provincia": "BUENOS AIRES",
       "telefono": "",
-      "web": "http://www.sodimac.com.ar/sodimac-ar/search/?Ntt=rotuladora"
+      "web": "http://www.sodimac.com.ar/sodimac-ar/search/?Ntt=rotuladora",
+      "latitud": -34.658073,
+      "longitud": -58.591215
     },
     {
       "nombre": "Sodimac",
@@ -221,7 +275,9 @@
       "localidad": "Villa Tesei",
       "provincia": "BUENOS AIRES",
       "telefono": "",
-      "web": "http://www.sodimac.com.ar/sodimac-ar/search/?Ntt=rotuladora"
+      "web": "http://www.sodimac.com.ar/sodimac-ar/search/?Ntt=rotuladora",
+      "latitud": -34.621272,
+      "longitud": -58.6362
     },
     {
       "nombre": "Sodimac",
@@ -229,7 +285,9 @@
       "localidad": "Vicente Lopez",
       "provincia": "BUENOS AIRES",
       "telefono": "",
-      "web": "http://www.sodimac.com.ar/sodimac-ar/search/?Ntt=rotuladora"
+      "web": "http://www.sodimac.com.ar/sodimac-ar/search/?Ntt=rotuladora",
+      "latitud": -34.533744,
+      "longitud": -58.467873
     },
     {
       "nombre": "Sodimac",
@@ -237,7 +295,9 @@
       "localidad": "Tortuguitas",
       "provincia": "BUENOS AIRES",
       "telefono": "",
-      "web": "http://www.sodimac.com.ar/sodimac-ar/search/?Ntt=rotuladora"
+      "web": "http://www.sodimac.com.ar/sodimac-ar/search/?Ntt=rotuladora",
+      "latitud": -34.450536,
+      "longitud": -58.724816
     },
     {
       "nombre": "Sodimac",
@@ -245,7 +305,9 @@
       "localidad": "Barrio Villa Urquiza",
       "provincia": "Cordoba",
       "telefono": "",
-      "web": "http://www.sodimac.com.ar/sodimac-ar/search/?Ntt=rotuladora"
+      "web": "http://www.sodimac.com.ar/sodimac-ar/search/?Ntt=rotuladora",
+      "latitud": -31.394187,
+      "longitud": -64.243226
     },
     {
       "nombre": "Sodimac",
@@ -253,6 +315,8 @@
       "localidad": "La Plata",
       "provincia": "BUENOS AIRES",
       "telefono": "",
-      "web": "http://www.sodimac.com.ar/sodimac-ar/search/?Ntt=rotuladora"
+      "web": "http://www.sodimac.com.ar/sodimac-ar/search/?Ntt=rotuladora",
+      "latitud": -34.894348,
+      "longitud": -57.999436
     }
   ]
