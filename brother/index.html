@@ -23,8 +23,13 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARF6J4fYlpu5cKqUfcbdoQ0iH-fCYWIx8"></script>  
       <script id="mustacheTemplate" type="text/x-handlebars-template">
+          <a href="javascript:void();" onclick="showAll()" class="list-group-item list-group-item-action flex-column align-items-start active">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Ver todos</h5>   
+            </div>
+          </a>        
            {{#items}}
-           <a href="javascript:void();" onclick="showmarker({{key}})" class="list-group-item list-group-item-action flex-column align-items-start">
+           <a href="javascript:void();" onclick="showmarker({{@index}})" class="list-group-item list-group-item-action flex-column align-items-start">
              <div class="d-flex w-100 justify-content-between">
                <h5 class="mb-1">{{nombre}}</h5>
                <small> 
@@ -62,17 +67,23 @@
         const varA=(typeof a[key]==='string')?a[key].toUpperCase():a[key];const varB=(typeof b[key]==='string')?b[key].toUpperCase():b[key];let comparison=0;if(varA>varB){comparison=1}else if(varA<varB){comparison=-1}
         return((order=='desc')?(comparison*-1):comparison)}}
 
+        function showAll() { 
+          for(var i=0;i<items.length;i++){
+            items[i].marker.setVisible(true); 
+          }
+        }        
+
         function showmarker(id) { 
           setVisibility(id)
-          google.maps.event.trigger(markers[id],'click')
-          map.panTo(markers[id].getPosition())
+          google.maps.event.trigger(items[id].marker,'click')
+          map.panTo(items[id].marker.getPosition())
         }
 
         function setVisibility(id){
-          for(var i=0;i<markers.length;i++){
-            markers[i].setVisible(false); 
+          for(var i=0;i<items.length;i++){
+            items[i].marker.setVisible(false); 
           }
-          markers[id].setVisible(true); 
+          items[id].marker.setVisible(true); 
         }             
          
          // Handlebars Helper
@@ -101,15 +112,15 @@
                position: myPosition,
                map: map,
                title: 'Mi ubicación'
-           });           
-
-
+           });   
            position.setMap(map);        
          
            $.ajax({
              dataType: "json",
              url: "data.json",
-             success: function(items){       
+             success: function(i){       
+
+              items = i;
 
               for (i in items) {  
                 items[i].distancia = calculateDistance(crd.latitude,crd.longitude,items[i].latitud,items[i].longitud);   
@@ -122,13 +133,6 @@
                   icon: 'brother_icon.ico'
                 });   
 
-                items[i].infowindow = new google.maps.InfoWindow({
-                  content: items[i].nombre
-                });
-
-                items[i].marker.addListener('click', function() {
-                  items[i].infowindow.open(map, items[i].marker);
-                });
 
      
               }
