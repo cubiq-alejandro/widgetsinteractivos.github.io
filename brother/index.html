@@ -1,155 +1,164 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Puntos de venta</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <style>        
-        #map {
-          height: 100%;
-        }        
-        html, body {
-          height: 100%;
-          margin: 0;
-          padding: 0;
-        }
-        .row_no_padding {
-          padding-right: 0px;
-          padding-left: 0px;          
-        }
-        .menu_overflow {          
-          height:800px;
-          overflow-y: scroll;    
-          -webkit-overflow-scrolling: touch;      
-        } 
-      </style>    
-  </head>
-  <body>
-
-
-    <div class="row">
-      <div class="col-sm-8 row_no_padding">
-        <div id="map"></div>
+   <head>
+      <meta charset="UTF-8">
+      <title>Puntos de venta</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <style>        
+        #map,body,html{height:100%}body,html{width:95%;margin:auto;padding:0}.row_no_padding{padding-right:0;padding-left:0}.menu_overflow{height:800px;overflow-y:scroll;-webkit-overflow-scrolling:touch}
+      </style>
+   </head>
+   <body>
+      <div class="row">
+         <div class="col-sm-8 row_no_padding">
+            <div id="map"></div>
+         </div>
+         <div class="col-sm-4 row_no_padding">
+            <div class="list-group menu_overflow" id="items_layout"></div>
+         </div>
       </div>
-      <div class="col-sm-4 row_no_padding">
-        <div class="list-group menu_overflow">
-            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
-              <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">List group item heading</h5>
-                <small>3 days ago</small>
-              </div>
-              <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-              <small>Donec id elit non mi porta.</small>
-            </a>
-            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-              <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">List group item heading</h5>
-                <small class="text-muted">3 days ago</small>
-              </div>
-              <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-              <small class="text-muted">Donec id elit non mi porta.</small>
-            </a>
-            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-              <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">List group item heading</h5>
-                <small class="text-muted">3 days ago</small>
-              </div>
-              <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-              <small class="text-muted">Donec id elit non mi porta.</small>
-            </a>
-            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-                <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1">List group item heading</h5>
-                  <small class="text-muted">3 days ago</small>
-                </div>
-                <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                <small class="text-muted">Donec id elit non mi porta.</small>
-              </a>
-              <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-                <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1">List group item heading</h5>
-                  <small class="text-muted">3 days ago</small>
-                </div>
-                <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                <small class="text-muted">Donec id elit non mi porta.</small>
-              </a>
-              <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-                  <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">List group item heading</h5>
-                    <small class="text-muted">3 days ago</small>
-                  </div>
-                  <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                  <small class="text-muted">Donec id elit non mi porta.</small>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-                  <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">List group item heading</h5>
-                    <small class="text-muted">3 days ago</small>
-                  </div>
-                  <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                  <small class="text-muted">Donec id elit non mi porta.</small>
-                </a> 
-                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-                  <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">List group item heading</h5>
-                    <small class="text-muted">3 days ago</small>
-                  </div>
-                  <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                  <small class="text-muted">Donec id elit non mi porta.</small>
-                </a> 
-                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-                  <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">List group item heading</h5>
-                    <small class="text-muted">3 days ago</small>
-                  </div>
-                  <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                  <small class="text-muted">Donec id elit non mi porta.</small>
-                </a>                                          
-          </div>        
-      </div>
-    </div>    
-  
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARF6J4fYlpu5cKqUfcbdoQ0iH-fCYWIx8"></script>  
+      <script id="mustacheTemplate" type="text/x-handlebars-template">
+           {{#items}}
+           <a href="javascript:void();" onclick="showmarker({{key}})" class="list-group-item list-group-item-action flex-column align-items-start">
+             <div class="d-flex w-100 justify-content-between">
+               <h5 class="mb-1">{{nombre}}</h5>
+               <small> 
+                  {{#ifEquals distancia "0"}}
+                    Menos de 1 KM
+                  {{/ifEquals}}                  
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARF6J4fYlpu5cKqUfcbdoQ0iH-fCYWIx8"></script>  
-  <script>
-      
-    var options = {
-      enableHighAccuracy: true,
-      timeout: 5000,
-      maximumAge: 0
-    };
+                  {{#ifNotEquals distancia "0"}}
+                    Aprox {{distancia}} KMS
+                  {{/ifNotEquals}}  
+                </small>
+             </div>
+             <p class="mb-1">{{direccion}} {{localidad}} {{provincia}}</p>
+             <small>        
+                 {{#ifNotEquals telefono ""}}
+                   Télefono {{telefono}}  
+                 {{/ifNotEquals}}          
+             </small>      
+           </a>
+           {{/items}}
+      </script>
+      <script>
+        var map;
+        var items;
+        var myPosition;
+        var markers = [];
+        var infowindows = [];         
+         
+        /******************   HELPERS    *******************/    
+        function calculateDistance(a,t,n,r){var s=deg2rad(n-a),h=deg2rad(r-t),M=Math.sin(s/2)*Math.sin(s/2)+Math.cos(deg2rad(a))*Math.cos(deg2rad(n))*Math.sin(h/2)*Math.sin(h/2),d=2*Math.atan2(Math.sqrt(M),Math.sqrt(1-M));return parseInt(6371*d)}
+        function deg2rad(n){return n*(Math.PI/180)}
 
-    function success(pos) {
-        var crd = pos.coords;
+        // function for dynamic sorting
+        function compareValues(key,order='asc'){return function(a,b){if(!a.hasOwnProperty(key)||!b.hasOwnProperty(key)){return 0}
+        const varA=(typeof a[key]==='string')?a[key].toUpperCase():a[key];const varB=(typeof b[key]==='string')?b[key].toUpperCase():b[key];let comparison=0;if(varA>varB){comparison=1}else if(varA<varB){comparison=-1}
+        return((order=='desc')?(comparison*-1):comparison)}}
 
-        console.log('Your current position is:');
-        console.log('Latitude : ' + crd.latitude);
-        console.log('Longitude: ' + crd.longitude);
-        console.log('More or less ' + crd.accuracy + ' meters.');
+        function showmarker(id) { 
+          setVisibility(id)
+          google.maps.event.trigger(markers[id],'click')
+          map.panTo(markers[id].getPosition())
+        }
 
-        var myLatLng = {lat: crd.latitude, lng: crd.longitude};
+        function setVisibility(id){
+          for(var i=0;i<markers.length;i++){
+            markers[i].setVisible(false); 
+          }
+          markers[id].setVisible(true); 
+        }             
+         
+         // Handlebars Helper
+         Handlebars.registerHelper('ifNotEquals', function(arg1, arg2, options) {
+             return (arg1 != arg2) ? options.fn(this) : options.inverse(this);
+         });
+         Handlebars.registerHelper('ifEquals', function(arg1, arg2, options) {
+             return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
+         });         
+         /*************************************/             
+         
 
-        var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 12,
-            center: myLatLng
-        });
+         
+         function success(pos) {
+           var crd = pos.coords;
+           console.log('More or less ' + crd.accuracy + ' meters.');
+         
+           myPosition = {lat: crd.latitude, lng: crd.longitude};
+         
+           map = new google.maps.Map(document.getElementById('map'), {
+             zoom: 14,
+             center: myPosition
+           }); 
+           // Set current position
+           var position = new google.maps.Marker({
+               position: myPosition,
+               map: map,
+               title: 'Mi ubicación'
+           });           
 
-        var marker = new google.maps.Marker({
-            position: myLatLng,
-            map: map,
-            title: 'Mi ubicación'
-        });   
 
-    };
+           position.setMap(map);        
+         
+           $.ajax({
+             dataType: "json",
+             url: "data.json",
+             success: function(items){       
 
-    function error(err) {
-        console.warn('ERROR(' + err.code + '): ' + err.message);
-    };
+              for (i in items) {  
+                items[i].distancia = calculateDistance(crd.latitude,crd.longitude,items[i].latitud,items[i].longitud);   
+                // Create marker
+                items[i].marker = new google.maps.Marker({
+                  position: {lat: items[i].latitud, lng: items[i].longitud},
+                  map: map,
+                  title: items[i].nombre,
+                  animation: google.maps.Animation.DROP,                
+                  icon: 'brother_icon.ico'
+                });   
 
-    navigator.geolocation.getCurrentPosition(success, error, options);  
-  </script>
-  </body>
+                items[i].infowindow = new google.maps.InfoWindow({
+                  content: items[i].nombre
+                });
+
+                items[i].marker.addListener('click', function() {
+                  items[i].infowindow.open(map, items[i].marker);
+                });
+
+     
+              }
+              //setVisibility(0);
+         
+              // Ordenar por distancia
+              items.sort(compareValues('distancia')); 
+              // Template
+              var targetContainer = $("#items_layout");
+              var source = $("#mustacheTemplate").html();
+              var template = Handlebars.compile(source);
+              var html = template({items: items});            
+              $(targetContainer).html(html);     
+         
+             }
+           });  
+         
+         
+         };
+         
+         function error(err) {
+             console.warn('ERROR(' + err.code + '): ' + err.message);
+         };
+         
+         // Run
+         navigator.geolocation.getCurrentPosition(success, error, {
+           enableHighAccuracy: true,
+           timeout: 5000,
+           maximumAge: 0
+         });  
+      </script>
+   </body>
 </html>
