@@ -23,23 +23,25 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARF6J4fYlpu5cKqUfcbdoQ0iH-fCYWIx8"></script>  
       <script id="mustacheTemplate" type="text/x-handlebars-template">
-          <a href="javascript:void();" onclick="showAll()" class="list-group-item list-group-item-action flex-column align-items-start active">
+          <a href="#" onclick="showAll()" class="list-group-item list-group-item-action flex-column align-items-start active">
             <div class="d-flex w-100 justify-content-between">
-              <h5 class="mb-1">Ver todos</h5>   
+              <h5 class="mb-1" style="margin: 0 auto; text-align: center;">Ver todos</h5>   
             </div>
           </a>        
            {{#items}}
-           <a href="javascript:void();" onclick="showmarker({{@index}})" class="list-group-item list-group-item-action flex-column align-items-start">
+           <a href="#" data-id="{{@index}}" class="list-group-item list-group-item-action flex-column align-items-start menu_lateral">
              <div class="d-flex w-100 justify-content-between">
                <h5 class="mb-1">{{nombre}}</h5>
                <small> 
-                  {{#ifEquals distancia "0"}}
-                    Menos de 1 KM
-                  {{/ifEquals}}                  
+                  {{#if distancia includeZero=true}}
+                    {{#ifEquals distancia "0"}}
+                      Menos de 1 KM
+                    {{/ifEquals}}                  
 
-                  {{#ifNotEquals distancia "0"}}
-                    Aprox {{distancia}} KMS
-                  {{/ifNotEquals}}  
+                    {{#ifNotEquals distancia "0"}}
+                      Aprox {{distancia}} KMS
+                    {{/ifNotEquals}}                    
+                  {{/if}}
                 </small>
              </div>
              <p class="mb-1">{{direccion}} {{localidad}} {{provincia}}</p>
@@ -71,13 +73,7 @@
           for(var i=0;i<items.length;i++){
             items[i].marker.setVisible(true); 
           }
-        }        
-
-        function showmarker(id) { 
-          setVisibility(id)
-          google.maps.event.trigger(items[id].marker,'click')
-          map.panTo(items[id].marker.getPosition())
-        }
+        }       
 
         function setVisibility(id){
           for(var i=0;i<items.length;i++){
@@ -85,6 +81,16 @@
           }
           items[id].marker.setVisible(true); 
         }             
+
+        function isEmpty(obj) {
+            if (obj == null) return true;
+            if (obj.length > 0)    return false;
+            if (obj.length === 0)  return true;
+            for (var key in obj) {
+                if (hasOwnProperty.call(obj, key)) return false;
+            }
+            return true;
+        }        
          
          // Handlebars Helper
          Handlebars.registerHelper('ifNotEquals', function(arg1, arg2, options) {
@@ -95,6 +101,14 @@
          });         
          /*************************************/             
          
+         $(document.body).on('click', '.menu_lateral', function() {
+            var id = $(this).data('id');
+            $('.menu_lateral').removeClass('active');
+            $(this).addClass('active');
+            setVisibility(id)
+            google.maps.event.trigger(items[id].marker,'click')
+            map.panTo(items[id].marker.getPosition())
+          });         
 
          
          function success(pos) {
@@ -113,17 +127,32 @@
                map: map,
                title: 'Mi ubicación'
            });   
-           position.setMap(map);        
+           position.setMap(map); 
+           setMarkers();       
+                
+         };
          
-           $.ajax({
+         function error(err) {
+            // Si hay error muestra el mapa sin geoposicion
+            map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 11,
+              center: {lat: -34.6209276, lng: -58.4458738}
+            }); 
+            setMarkers();
+         };
+
+
+         function setMarkers() {
+          $.ajax({
              dataType: "json",
              url: "data.json",
-             success: function(i){       
-
+             success: function(i){     
               items = i;
-
               for (i in items) {  
-                items[i].distancia = calculateDistance(crd.latitude,crd.longitude,items[i].latitud,items[i].longitud);   
+
+                if(!isEmpty(myPosition)){
+                  items[i].distancia = calculateDistance(myPosition.lat,myPosition.lng,items[i].latitud,items[i].longitud);  
+                }                 
                 // Create marker
                 items[i].marker = new google.maps.Marker({
                   position: {lat: items[i].latitud, lng: items[i].longitud},
@@ -131,31 +160,23 @@
                   title: items[i].nombre,
                   animation: google.maps.Animation.DROP,                
                   icon: 'brother_icon.ico'
-                });   
-
-
-     
+                });  
               }
-              //setVisibility(0);
          
               // Ordenar por distancia
-              items.sort(compareValues('distancia')); 
+              if(!isEmpty(myPosition)){
+                items.sort(compareValues('distancia')); 
+              }                
+              
               // Template
               var targetContainer = $("#items_layout");
               var source = $("#mustacheTemplate").html();
               var template = Handlebars.compile(source);
               var html = template({items: items});            
-              $(targetContainer).html(html);     
-         
+              $(targetContainer).html(html);          
              }
-           });  
-         
-         
-         };
-         
-         function error(err) {
-             console.warn('ERROR(' + err.code + '): ' + err.message);
-         };
+           }); 
+         }
          
          // Run
          navigator.geolocation.getCurrentPosition(success, error, {
