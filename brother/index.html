@@ -113,10 +113,8 @@
          
          function success(pos) {
            var crd = pos.coords;
-           console.log('More or less ' + crd.accuracy + ' meters.');
-         
-           myPosition = {lat: crd.latitude, lng: crd.longitude};
-         
+           console.log('More or less ' + crd.accuracy + ' meters.');         
+           myPosition = {lat: crd.latitude, lng: crd.longitude};         
            map = new google.maps.Map(document.getElementById('map'), {
              zoom: 14,
              center: myPosition
@@ -147,26 +145,42 @@
              dataType: "json",
              url: "data.json",
              success: function(i){     
+              var infowindow = new google.maps.InfoWindow();
               items = i;
-              for (i in items) {  
 
+              // Calcular distancia
+              for (i in items) {  
                 if(!isEmpty(myPosition)){
                   items[i].distancia = calculateDistance(myPosition.lat,myPosition.lng,items[i].latitud,items[i].longitud);  
-                }                 
+                }      
+              }
+              if(!isEmpty(myPosition)){
+               items.sort(compareValues('distancia')); 
+              }                
+              // Fin de calcular distancia
+
+              for (i in items) {  
                 // Create marker
-                items[i].marker = new google.maps.Marker({
+                var marker = new google.maps.Marker({
                   position: {lat: items[i].latitud, lng: items[i].longitud},
                   map: map,
                   title: items[i].nombre,
                   animation: google.maps.Animation.DROP,                
                   icon: 'brother_icon.ico'
                 });  
-              }
+
+                items[i].marker = marker;
+                
+                google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                  return function() {
+                    infowindow.setContent(items[i].nombre + '<br>' + items[i].direccion + '<br>' + items[i].localidad );
+                    infowindow.open(map, marker);
+                  }
+                })(items[i].marker, i));                
+              }              
          
               // Ordenar por distancia
-              if(!isEmpty(myPosition)){
-                items.sort(compareValues('distancia')); 
-              }                
+              
               
               // Template
               var targetContainer = $("#items_layout");
