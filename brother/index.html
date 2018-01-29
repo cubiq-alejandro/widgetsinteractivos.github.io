@@ -90,8 +90,19 @@
                 if (hasOwnProperty.call(obj, key)) return false;
             }
             return true;
-        }        
-         
+        }  
+        
+        function pinSymbol() {
+            return {
+                path: 'M 0,0 C -2,-20 -10,-22 -10,-30 A 10,10 0 1,1 10,-30 C 10,-22 2,-20 0,0 z',
+                fillColor: '#0C2D9F',
+                fillOpacity: 1,
+                strokeColor: '#000',
+                strokeWeight: 1,
+                scale: 1
+            };
+        }              
+                
          // Handlebars Helper
          Handlebars.registerHelper('ifNotEquals', function(arg1, arg2, options) {
              return (arg1 != arg2) ? options.fn(this) : options.inverse(this);
@@ -170,7 +181,7 @@
                   map: map,
                   title: items[i].nombre,
                   animation: google.maps.Animation.DROP,                
-                  icon: 'brother_icon.ico'
+                  icon: pinSymbol()
                 });  
                 items[i].marker = marker;                
                 google.maps.event.addListener(marker, 'click', (function(marker, i) {
