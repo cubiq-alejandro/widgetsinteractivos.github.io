@@ -154,9 +154,13 @@
                   items[i].distancia = calculateDistance(myPosition.lat,myPosition.lng,items[i].latitud,items[i].longitud);  
                 }      
               }
+
+              // Ordenar por distancia
               if(!isEmpty(myPosition)){
                items.sort(compareValues('distancia')); 
-              }                
+              } else {
+                items.sort(compareValues('provincia')); 
+              }               
               // Fin de calcular distancia
 
               for (i in items) {  
@@ -168,20 +172,15 @@
                   animation: google.maps.Animation.DROP,                
                   icon: 'brother_icon.ico'
                 });  
-
-                items[i].marker = marker;
-                
+                items[i].marker = marker;                
                 google.maps.event.addListener(marker, 'click', (function(marker, i) {
                   return function() {
                     infowindow.setContent(items[i].nombre + '<br>' + items[i].direccion + '<br>' + items[i].localidad );
                     infowindow.open(map, marker);
                   }
                 })(items[i].marker, i));                
-              }              
-         
-              // Ordenar por distancia
-              
-              
+              }       
+
               // Template
               var targetContainer = $("#items_layout");
               var source = $("#mustacheTemplate").html();
