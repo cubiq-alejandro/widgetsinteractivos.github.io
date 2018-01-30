@@ -8,12 +8,17 @@
         #map,body,html{height:100%}body,html{width:100%;margin:auto;padding:0}.row_no_padding{padding-right:0;padding-left:0}.menu_overflow{height:450px;}
       </style>
 <style>
-  .menu_overflow {
+      .menu_overflow {
         height:450px;
         border:none;
         overflow-y:scroll;
         -webkit-overflow-scrolling:touch;
       }
+      .ver-todos {
+        visibility: visible;
+        display: block;
+      }
+
       @media screen and (max-width:1166px) {
         .menu_overflow {
               height:450px;
@@ -21,6 +26,10 @@
               overflow-y:scroll;
               -webkit-overflow-scrolling:touch;              
           }
+        .ver-todos {
+          visibility: visible;
+          display: block;
+        }          
   
       }
       @media screen and (max-width:1024px) {
@@ -30,6 +39,10 @@
               overflow-y:scroll;
               -webkit-overflow-scrolling:touch;              
           }
+        .ver-todos {
+          visibility: visible;
+          display: block;
+        }            
       }
       @media screen and (max-width:980px) {
         .menu_overflow {
@@ -38,6 +51,10 @@
               overflow-y:scroll;
               -webkit-overflow-scrolling:touch;                   
           }
+        .ver-todos {
+          visibility: visible;
+          display: block;
+        }            
       }
       @media screen and (max-width:767px) {
         .menu_overflow {
@@ -46,6 +63,10 @@
               overflow-y:scroll;
               -webkit-overflow-scrolling:touch;                   
           }
+        .ver-todos {
+          visibility: visible;
+          display: block;
+        }            
       }
       @media screen and (max-width:599px) {
         .menu_overflow {
@@ -54,6 +75,10 @@
               overflow-y:scroll;
               -webkit-overflow-scrolling:touch;                   
           }
+          .ver-todos {
+            visibility: hidden;
+            display: none;
+          }              
       }
       @media screen and (max-width:479px) {
         .menu_overflow {
@@ -62,6 +87,10 @@
               overflow-y:scroll;
               -webkit-overflow-scrolling:touch;                   
           }
+        .ver-todos {
+          visibility: hidden;
+          display: none;
+        }             
       }
       @media screen and (max-width:374px) {
         .menu_overflow {
@@ -70,6 +99,10 @@
               overflow-y:scroll;
               -webkit-overflow-scrolling:touch;                   
           }
+        .ver-todos {
+          visibility: hidden;
+          display: none;
+        }             
   
       }
     
@@ -90,7 +123,8 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARF6J4fYlpu5cKqUfcbdoQ0iH-fCYWIx8"></script>  
       <script id="mustacheTemplate" type="text/x-handlebars-template">
-          <a href="#" onclick="showAll()" class="list-group-item list-group-item-action flex-column align-items-start active">
+          <a href="#" onclick="showAll()" class="list-group-item list-group-item-action flex-column align-items-start active ver-todos" style="background-color: #E9758D;
+          border-color: #E9758D;" >
             <div class="d-flex w-100 justify-content-between">
               <h5 class="mb-1" style="margin: 0 auto; text-align: center;">Ver todos</h5>   
             </div>
