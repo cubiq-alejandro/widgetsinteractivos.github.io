@@ -5,18 +5,14 @@
       <title>Puntos de venta</title>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
       <style>        
-        #map,body,html{height:100%}body,html{width:100%;margin:auto;padding:0}.row_no_padding{padding-right:0;padding-left:0}.menu_overflow{height:450px;}
+        #map,body,html{height:450px;width:100%}body,html{width:100%;margin:auto;padding:0}.row_no_padding{padding-right:0;padding-left:0}
       </style>
-<style>
+      <style>
       .menu_overflow {
         height:450px;
         border:none;
         overflow-y:scroll;
         -webkit-overflow-scrolling:touch;
-      }
-      .ver-todos {
-        visibility: visible;
-        display: block;
       }
 
       @media screen and (max-width:1166px) {
@@ -25,12 +21,7 @@
               border:none;
               overflow-y:scroll;
               -webkit-overflow-scrolling:touch;              
-          }
-        .ver-todos {
-          visibility: visible;
-          display: block;
-        }          
-  
+          } 
       }
       @media screen and (max-width:1024px) {
         .menu_overflow {
@@ -38,11 +29,7 @@
               border:none;
               overflow-y:scroll;
               -webkit-overflow-scrolling:touch;              
-          }
-        .ver-todos {
-          visibility: visible;
-          display: block;
-        }            
+          }          
       }
       @media screen and (max-width:980px) {
         .menu_overflow {
@@ -50,11 +37,7 @@
               border:none;
               overflow-y:scroll;
               -webkit-overflow-scrolling:touch;                   
-          }
-        .ver-todos {
-          visibility: visible;
-          display: block;
-        }            
+          }         
       }
       @media screen and (max-width:767px) {
         .menu_overflow {
@@ -62,11 +45,7 @@
               border:none;
               overflow-y:scroll;
               -webkit-overflow-scrolling:touch;                   
-          }
-        .ver-todos {
-          visibility: visible;
-          display: block;
-        }            
+          }          
       }
       @media screen and (max-width:599px) {
         .menu_overflow {
@@ -74,11 +53,7 @@
               border:none;
               overflow-y:scroll;
               -webkit-overflow-scrolling:touch;                   
-          }
-          .ver-todos {
-            visibility: hidden;
-            display: none;
-          }              
+          }             
       }
       @media screen and (max-width:479px) {
         .menu_overflow {
@@ -86,11 +61,7 @@
               border:none;
               overflow-y:scroll;
               -webkit-overflow-scrolling:touch;                   
-          }
-        .ver-todos {
-          visibility: hidden;
-          display: none;
-        }             
+          }          
       }
       @media screen and (max-width:374px) {
         .menu_overflow {
@@ -98,22 +69,17 @@
               border:none;
               overflow-y:scroll;
               -webkit-overflow-scrolling:touch;                   
-          }
-        .ver-todos {
-          visibility: hidden;
-          display: none;
-        }             
-  
+          }       
       }
     
     </style>      
    </head>
    <body>
       <div class="row">
-         <div class="col-xs-12 col-sm-8 row_no_padding">
+         <div class="col-sm-9 col-xs-12 row_no_padding">
             <div id="map"></div>
          </div>
-         <div class="col-sm-4 hidden-xs row_no_padding">
+         <div class="col-sm-3 col-xs-12 row_no_padding">
             <div class="list-group menu_overflow" id="items_layout"></div>
          </div>
       </div>
