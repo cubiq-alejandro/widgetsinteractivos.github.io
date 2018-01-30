@@ -1,0 +1,65 @@
+#map,body,html{height:450px;width:100%}body,html{width:100%;margin:auto;padding:0}.row_no_padding{padding-right:0;padding-left:0}
+
+.menu_overflow {
+    height:450px;
+    border:none;
+    overflow-y:scroll;
+    -webkit-overflow-scrolling:touch;
+  }
+
+  @media screen and (max-width:1166px) {
+    .menu_overflow {
+          height:450px;
+          border:none;
+          overflow-y:scroll;
+          -webkit-overflow-scrolling:touch;              
+      } 
+  }
+  @media screen and (max-width:1024px) {
+    .menu_overflow {
+          height:450px;
+          border:none;
+          overflow-y:scroll;
+          -webkit-overflow-scrolling:touch;              
+      }          
+  }
+  @media screen and (max-width:980px) {
+    .menu_overflow {
+          height:450px;
+          border:none;
+          overflow-y:scroll;
+          -webkit-overflow-scrolling:touch;                   
+      }         
+  }
+  @media screen and (max-width:767px) {
+    .menu_overflow {
+          height:650px;
+          border:none;
+          overflow-y:scroll;
+          -webkit-overflow-scrolling:touch;                   
+      }          
+  }
+  @media screen and (max-width:599px) {
+    .menu_overflow {
+          height:650px;
+          border:none;
+          overflow-y:scroll;
+          -webkit-overflow-scrolling:touch;                   
+      }             
+  }
+  @media screen and (max-width:479px) {
+    .menu_overflow {
+          height:650px;
+          border:none;
+          overflow-y:scroll;
+          -webkit-overflow-scrolling:touch;                   
+      }          
+  }
+  @media screen and (max-width:374px) {
+    .menu_overflow {
+          height:650px;
+          border:none;
+          overflow-y:scroll;
+          -webkit-overflow-scrolling:touch;                   
+      }       
+  }
