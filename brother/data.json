@@ -318,5 +318,95 @@
       "web": "http://www.sodimac.com.ar/sodimac-ar/search/?Ntt=rotuladora",
       "latitud": -34.894348,
       "longitud": -57.999436
-    }
+    },
+    {  
+      "nombre":"Milex",
+      "direccion":"Viamonte 468",
+      "localidad":"CABA",
+      "provincia":"CABA",
+      "telefono":"4312-1625",
+      "web": "http://www.milex.com.ar/productos.php?id_cat=51&opc=productos",
+      "latitud":-34.599846,
+      "longitud":-58.373538
+   },
+   {  
+      "nombre":"ARGENPRINT",
+      "direccion":"Santiago del Estero 331",
+      "localidad":"CABA",
+      "provincia":"CABA",
+      "telefono":"4381-1663",
+      "web":"",
+      "latitud":-34.612575,
+      "longitud":-58.384806
+   },
+   {  
+      "nombre":"IMAGING GROUP",
+      "direccion":"Araoz de Lamadrid  1577",
+      "localidad":"CABA",
+      "provincia":"CABA",
+      "telefono":"4302-1015",
+      "web":"",
+      "latitud":-34.640384,
+      "longitud":-58.37373
+   },
+   {  
+      "nombre":"WELCOME",
+      "direccion":"Av Cabildo 1579",
+      "localidad":"CABA",
+      "provincia":"CABA",
+      "telefono":"4783-1409",
+      "web":"",
+      "latitud":-34.566155,
+      "longitud":-58.451738
+   },
+   {  
+      "nombre":"PELUFFO",
+      "direccion":"Av Corrientes 4276",
+      "localidad":"CABA",
+      "provincia":"CABA",
+      "telefono":"4862-2164",
+      "web":"",
+      "latitud":-34.602912,
+      "longitud":-58.425211
+   },
+   {  
+      "nombre":"AYALA",
+      "direccion":"AV.  GRAL Las Heras 3347",
+      "localidad":"CABA",
+      "provincia":"CABA",
+      "telefono":"4825-9592",
+      "web":"",
+      "latitud":-34.582982,
+      "longitud":-58.407575
+   },
+   {  
+      "nombre":"INSU COM",
+      "direccion":"Av. Rivadavia 1727",
+      "localidad":"CABA",
+      "provincia":"CABA",
+      "telefono":"4382-9933",
+      "web":"",
+      "latitud":-34.592908,
+      "longitud":-58.40548
+   },
+   {  
+      "nombre":"EL ANGEL",
+      "direccion":"Av Mitre 972",
+      "localidad":"AVELLANEDA",
+      "provincia":"BUENOS AIRES",
+      "telefono":"4222-1220",
+      "web":"",
+      "latitud":-34.663592,
+      "longitud":-58.362598
+   },
+   {  
+      "nombre":"BATIK",
+      "direccion":"Av. 7 1178",
+      "localidad":"LA PLATA",
+      "provincia":"BUENOS AIRES",
+      "telefono":"(0221) 485006",
+      "web":"",
+      "latitud":-34.918157,
+      "longitud":-57.945059
+   }    
   ]
