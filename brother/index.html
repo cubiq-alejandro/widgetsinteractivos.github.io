@@ -32,16 +32,12 @@
            <a href="#" data-id="{{@index}}" class="list-group-item list-group-item-action flex-column align-items-start menu_lateral">
              <div class="d-flex w-100 justify-content-between">
                <h5 class="mb-1">{{nombre}}</h5>
-               <small> 
-                  {{#if distancia includeZero=true}}
-                    {{#ifEquals distancia "0"}}
-                      Menos de 1 KM
-                    {{/ifEquals}}                  
+               <small>                
 
-                    {{#ifNotEquals distancia "0"}}
-                      Aprox {{distancia}} KMS
-                    {{/ifNotEquals}}                    
-                  {{/if}}
+                  {{distanciaVisible}}
+                  
+
+
                 </small>
              </div>
              <p class="mb-1">{{direccion}} {{localidad}} {{provincia}}</p>
