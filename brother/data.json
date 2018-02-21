@@ -30,16 +30,6 @@
       "longitud": -68.831231
     },
     {
-      "nombre": "Digital Soluciones Informáticas S.R.L.",
-      "direccion": "Rosario de santa fé 128",
-      "localidad": "Barrio centro",
-      "provincia": "Cordoba",
-      "telefono": "(0351)-4221123 / (0351)- 4237348",
-      "web": "",
-      "latitud": -32.944717,
-      "longitud": -60.647858
-    },
-    {
       "nombre": "Reset-Tecnologo srl",
       "direccion": "Parana 657",
       "localidad": "CABA",
@@ -368,5 +358,15 @@
       "web":"",
       "latitud":-34.582982,
       "longitud":-58.407575
+   },
+   {  
+      "nombre":"AME Comercialización",
+      "direccion":"HIPOLITO IRIGOYEN 2634",
+      "localidad":"SANTA FE",
+      "provincia":"SANTA FE",
+      "telefono":"0342-4539533",
+      "web":"",
+      "latitud":-31.6423621,
+      "longitud":-60.7072481
    }
   ]
