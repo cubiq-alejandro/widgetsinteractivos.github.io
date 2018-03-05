@@ -368,5 +368,25 @@
       "web":"",
       "latitud":-31.6423621,
       "longitud":-60.7072481
-   }
+   },
+   {  
+    "nombre":"Libreria San Martin",
+    "direccion":"Av. San Martin 3186",
+    "localidad":"CABA",
+    "provincia":"CABA",
+    "telefono":"4581-7343",
+    "web":"http://www.libreria-sanmartin.com.ar/",
+    "latitud":-34.602017,
+    "longitud":-58.4709834
+   },
+   {  
+    "nombre":"Recargas express",
+    "direccion":"Suarez 1401",
+    "localidad":"CABA",
+    "provincia":"CABA",
+    "telefono":"4301-7277",
+    "web":"",
+    "latitud":-34.6381996,
+    "longitud":-58.3737617
+  }      
   ]
