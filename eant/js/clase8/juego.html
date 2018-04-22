@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Juego</title>    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="juego.css">
+  </head>
+  <body>
+    <main role="main" class="container">
+        <div class="card text-center">
+            <div class="card-header">
+                Credito : <span id="credito"></span>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-4">
+                        <img class="loading" id="elemento1" src="imagenes/1.png">
+                    </div>
+                    <div class="col-4">
+                        <img class="loading" id="elemento2" src="imagenes/2.png">
+                    </div>
+                    <div class="col-4">
+                        <img class="loading" id="elemento3" src="imagenes/3.png">
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer text-muted">
+                <button type="button" id="spin" class="btn btn-primary btn-block">Spin</button>            
+            </div>
+        </div>
+    </main>
+    <script src="juego.js"></script>
+  </body>
+</html>
