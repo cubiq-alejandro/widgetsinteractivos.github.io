@@ -11,6 +11,17 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Custom styles for this template -->
     <link href="style.css" rel="stylesheet">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics --> 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-12243059-1"></script>
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-12243059-1');
+    </script>    
+    
   </head>
   <body>
     <main role="main">   
@@ -174,19 +185,8 @@
       </div>
     </div>    
 
-    <script id="retailersTemplate" type="text/x-handlebars-template">   
-      {{#items}}
-      <a href="#" data-id="{{@index}}" class="list-group-item list-group-item-action flex-column align-items-start menu_lateral">
-        <small>        
-            <button class="btn btn-light btn-sm pull-right" onClick="window.open('{{link}}');"><span class="icon">web</span></button>                     
-        </small>      
-      </a>
-      {{/items}}
-    </script>    
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>    
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>    
 
     <script>
@@ -418,6 +418,25 @@
         $("#productoImagen").attr('src',imagen);
         $("#modalProductoTitle").html(producto.nombre);
 
+         for (i = 0; i < producto.links.length; i++) { 
+
+            for (c = 0; c < retailer.length; c++) { 
+                if(retailer[c].id == producto.links[i].retailer){
+                  re = retailer[c];
+                }
+            }
+
+           var nombre_retail = re.nombre;
+           var imagen_retail = re.imagen;
+           var link = producto.links[i].link;
+
+           //console.log(nombre_retail,imagen_retail,link)*/
+
+           $("#retailers").append('<li>' + nombre_retail + '</li>')
+    
+        }
+
+
         // Mostrar modal
         $('#modalProducto').modal('show');    
       });
@@ -429,6 +448,14 @@
             }
         }
       }
+
+      function getRetailer(id){ 
+        for (i = 0; i < retailer.length; i++) { 
+            if(retailer[i].id == id){
+              return retailer[i];
+            }
+        }
+      }      
 
     </script>
 
