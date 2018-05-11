@@ -173,8 +173,8 @@
                 <img src="" id="productoImagen" class="img-fluid" >
               </div>
               <div class="col-md-6">
-                <ul id="retailers">
-                </ul>
+                <div class="row" id="retailers">
+                </div>
               </div>              
             </div>
           </div>
@@ -188,221 +188,10 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>    
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>    
+    <script src="retails.js"></script>
+    <script src="products.js"></script>
 
     <script>
-
-      var productos = [
-      {
-          "id": 3,
-          "nombre": "DS620",
-          "precio": "3999",
-          "precio_final": "2999",
-          "descuento": "25%",
-          "links": [
-            {
-              "retailer": 6,
-              "link": "http://www.air-computers.com/"
-            },
-            {
-              "retailer": 7,
-              "link": "http://elit.com.ar/"
-            },
-            {
-              "retailer": 8,
-              "link": "http://www.free-online.com.ar/"
-            },     
-            {
-              "retailer": 5,
-              "link": "https://articulo.mercadolibre.com.ar/MLA-643402878-scanner-portatil-brother-a4-color-ds-620-_JM"
-            },
-            {
-              "retailer": 9,
-              "link": "https://www.falabella.com.ar/falabella-ar/product/2798246/Scanner-DS-620/2798246"
-            }, 
-            {
-              "retailer": 10,
-              "link": "https://www.compumundo.com.ar/producto/escaner-portatil-brother-ds-620/892b531ba8"
-            },
-            {
-              "retailer": 2,
-              "link": "https://www.staples.com.ar/new_product.asp?sku=SCABHDS620&"
-            }, 
-            {
-              "retailer": 1,
-              "link": "http://www.e-teorema.com/producto.php/1023153/scanner_brother_mobile_ds-620"
-            }                                                       
-          ]
-        },
-        {
-          "id": 4,
-          "nombre": "CM300",
-          "precio": "11999",
-          "precio_final": "7999",
-          "descuento": "33%",
-          "links": [
-            {
-              "retailer": 5,
-              "link": "https://articulo.mercadolibre.com.ar/MLA-646450056-plotter-de-corte-brother-scan-n-cut-cm300-curso-gratuito-_JM"
-            },
-            {
-              "retailer": 2,
-              "link": "https://www.staples.com.ar/new_product.asp?sku=MSCBHCM300&"
-            },
-            {
-              "retailer": 1,
-              "link": "http://www.e-teorema.com/producto.php/801089/plotter_brother_scanncut_cm300"
-            }                                                  
-          ]
-        },    
-        {
-          "id": 5,
-          "nombre": "CS6000i",
-          "precio": "9719",
-          "precio_final": "7779",
-          "descuento": "25%",
-          "links": [
-            {
-              "retailer": 3,
-              "link": "http://maplit-brother.com/producto/maquina-de-coser-modelo-cs6000i/"
-            },
-            {
-              "retailer": 4,
-              "link": "https://www.casavargascordoba.com.ar/index.php/brother-cs-6000i.html"
-            }                                             
-          ]
-        },
-        {
-          "id": 6,
-          "nombre": "PE430",
-          "precio": "14899",
-          "precio_final": "11919",
-          "descuento": "25%",
-          "links": [
-            {
-              "retailer": 1,
-              "link": "http://www.e-teorema.com/producto.php/776742/bordadora_brother_pe430"
-            },
-            {
-              "retailer": 2,
-              "link": "https://www.staples.com.ar/new_product.asp?sku=MDBBHPE430&"
-            },
-            {
-              "retailer": 5,
-              "link": "https://articulo.mercadolibre.com.ar/MLA-644269996-maquina-bordar-computarizada-brother-pe430-curso-gratuito-_JM"
-            }                                                          
-          ]
-        },     
-        {
-          "id": 7,
-          "nombre": "PE7700",
-          "precio": "21169",
-          "precio_final": "16939",
-          "descuento": "25%",
-          "links": [
-            {
-              "retailer": 3,
-              "link": "http://maplit-brother.com/producto/bordadora-computarizada-modelo-pe770/"
-            },
-            {
-              "retailer": 4,
-              "link": "https://www.casavargascordoba.com.ar/index.php/bordadoras/bordar-domesticas/solo-bordado/brother-pe-770.html"
-            }                                                      
-          ]
-        },   
-        {
-          "id": 8,
-          "nombre": "XL5900",
-          "precio": "6809",
-          "precio_final": "5449",
-          "descuento": "25%",
-          "links": [
-            {
-              "retailer": 3,
-              "link": "http://maplit-brother.com/producto/maquina-de-coser-modelo-xl5900/"
-            },
-            {
-              "retailer": 4,
-              "link": "https://www.casavargascordoba.com.ar/index.php/brother-xl-5900.html"
-            }                                                      
-          ]
-        },                              
-        {
-          "id": 9,
-          "nombre": "QL-800",
-          "precio": "4059",
-          "precio_final": "3039",
-          "descuento": "25%",
-          "links": [
-            {
-              "retailer": 1,
-              "link": "http://www.e-teorema.com/producto.php/1023995/etiquetadora_brother_ql-800"
-            },
-            {
-              "retailer": 2,
-              "link": "https://www.staples.com.ar/new_product.asp?sku=ROTBHQL800&"
-            },
-            {
-              "retailer": 5,
-              "link": "https://articulo.mercadolibre.com.ar/MLA-685983087-etiquetadora-de-escritorio-brother-ql-800-_JM"
-            },                        
-          ]
-        }    
-      ]
-
-      var retailer = [
-        {
-          "id": 1,
-          "nombre": "TEOREMA",
-          "imagen": "retailers/1.png"
-        },  
-        {
-          "id": 2,
-          "nombre": "STAPLES",
-          "imagen": "retailers/2.png"
-        },
-        {
-          "id": 3,
-          "nombre": "MAPLIT",
-          "imagen": "retailers/3.png"
-        },
-        {
-          "id": 4,
-          "nombre": "VARGAS",
-          "imagen": "retailers/4.png"
-        },     
-        {
-          "id": 5,
-          "nombre": "TIENDA OFICIAL MERCADO LIBRE",
-          "imagen": "retailers/5.png"
-        },    
-        {
-          "id": 6,
-          "nombre": "AIR",
-          "imagen": "retailers/6.png"
-        },
-        {
-          "id": 7,
-          "nombre": "ELIT",
-          "imagen": "retailers/7.png"
-        },  
-        {
-          "id": 8,
-          "nombre": "FREE",
-          "imagen": "retailers/8.png"
-        },  
-        {
-          "id": 9,
-          "nombre": "FALABELLA",
-          "imagen": "retailers/9.png"
-        },  
-        {
-          "id": 10,
-          "nombre": "COMPUMUNDO",
-          "imagen": "retailers/10.png"
-        }                       
-        
-      ]      
-
 
       $( ".btn-action" ).click(function() {
         var id = $(this).data("id");
@@ -430,10 +219,7 @@
            var imagen_retail = re.imagen;
            var link = producto.links[i].link;
 
-           //console.log(nombre_retail,imagen_retail,link)*/
-
-           $("#retailers").append('<li>' + '<a href="">' + '<img src="' + imagen_retail + '">'  + '</a>'  + '</li>')
-     
+           $("#retailers").append('<div class="col-md-6">' + '<img class="img-fluid" src="' + imagen_retail + '">' + '<a href="'+ link +'" class="btn btn-block btn-outline-secondary btn-sm" target="_blank">' +  'COMPRAR'  + '</a>'  + '</div>')     
         }
 
 
