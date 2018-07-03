@@ -1,0 +1,75 @@
+html {
+    font-size: 14px;
+  }
+  @media (min-width: 768px) {
+    html {
+      font-size: 16px;
+    }
+  }
+
+  .wrapper{
+    max-width: 960px;
+    margin: auto;
+  }
+
+  hr {
+    max-width: 960px;
+  }
+
+  .img-icon {
+    opacity: 0.9;
+  }   
+
+  .img-icon:hover {
+    opacity: 1;
+    transform: scale(1.1);
+  }     
+  
+  .container {
+    max-width: 960px;
+  } 
+  
+  .card-deck .card {
+    min-width: 220px;
+  }
+
+  .btn-color-1 {
+    background-color: #EB0079;
+    opacity: 0.8;
+    border: 0px;
+  } 
+
+  .btn-color-1:hover {
+    background-color: #EB0079;    
+    border: 0px;
+    opacity: 1;
+  }   
+  .btn-color-1:active {
+    background-color: #EB0079;    
+    border: 0px;
+    opacity: 1;
+  }   
+  .btn-color-1:focus {
+    background-color: #EB0079;    
+    border: 0px;
+    opacity: 1;
+  }       
+
+  
+
+  .btn-color-2 {
+    background-color: #7D00FF;
+    opacity: 0.8;
+    border: 0px;
+  } 
+
+  .btn-color-2:hover, .btn-color-2:active {
+    background-color: #7D00FF;
+    border: 0px;
+    opacity: 1;
+  }   
+  
+  .border-top { border-top: 1px solid #e5e5e5; }
+  .border-bottom { border-bottom: 1px solid #e5e5e5; }
+  
+  .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
