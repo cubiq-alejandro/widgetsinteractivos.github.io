@@ -27,7 +27,7 @@ var retailer = [
     {
       "id": 6,
       "nombre": "UNITRONIC",
-      "imagen": "retailers/6.png"
+      "imagen": "retailers/6.jpg"
     },
     {
       "id": 7,
