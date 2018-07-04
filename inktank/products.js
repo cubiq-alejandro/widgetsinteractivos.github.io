@@ -2,6 +2,7 @@ var productos = [
     {
         "id": 1,
         "nombre": "DCP-T310W",
+        "color": 1,
         "links": [
           {
             "retailer": 4,
@@ -24,6 +25,7 @@ var productos = [
     {
         "id": 2,
         "nombre": "DCP-T510W",
+        "color": 1,        
         "links": [
           {
             "retailer": 4,
@@ -34,7 +36,7 @@ var productos = [
             "link": "https://www.staples.com.ar/new_product.asp?sku=IMPBHDCPT510W&tracking=COLECCION_ID_407&"
           },          
           {
-            "retailer": 8,
+            "retailer": 1,
             "link": "http://www.e-teorema.com/producto.php/1040225/multifuncion_inkjet_brother_inktank_dcp-t510w"
           },
           {
@@ -54,6 +56,7 @@ var productos = [
     {
         "id": 3,
         "nombre": "DCP-T710W",
+        "color": 1,        
         "links": [    
           {
             "retailer": 4,
@@ -75,47 +78,66 @@ var productos = [
       },
       {
         "id": 4,
-        "nombre": "CM300",
+        "nombre": "Botella de tinta Brother BT5001C",
+        "color": 2,        
         "links": [
           {
-            "retailer": 1,
-            "link": "http://www.e-teorema.com/producto.php/801089/plotter_brother_scanncut_cm300"
-          },
+            "retailer": 2,
+            "link": "https://www.staples.com.ar/new_product.asp?sku=CAIBHBT500C&"
+          },    
           {
-            "retailer": 21,
-            "link": "mailto:seminarios@brother.com.ar?subject=HotSale%20CM300&body=Por%20favor%20completá%20en%20este%20email%20tu%20nombre%20y%20apellido%20y%20nos%20pondremos%20en%20contacto%20a%20la%20brevedad!"
-          }              
+            "retailer": 5,
+            "link": "https://articulo.mercadolibre.com.ar/MLA-629898624-tinta-brother-cyan-original-bt-5001c-hasta-5000-paginas-_JM"
+          }             
         ]
       },    
       {
         "id": 5,
-        "nombre": "CS6000i",
+        "nombre": "Botella de tinta Brother BT5001M",
+        "color": 2,                
         "links": [
           {
-            "retailer": 21,
-            "link": "mailto:seminarios@brother.com.ar?subject=HotSale%20CS6000i&body=Por%20favor%20completá%20en%20este%20email%20tu%20nombre%20y%20apellido%20y%20nos%20pondremos%20en%20contacto%20a%20la%20brevedad!"
-          }                                              
+            "retailer": 2,
+            "link": "https://www.staples.com.ar/new_product.asp?sku=CAIBHBT500M&"
+          },    
+          {
+            "retailer": 5,
+            "link": "https://articulo.mercadolibre.com.ar/MLA-629898593-tinta-brother-magenta-original-bt-5001m-hasta-5000paginas-_JM"
+          }                                             
         ]
       },
       {
         "id": 6,
-        "nombre": "PE430",
+        "nombre": "Botella de tinta Brother BT5001Y",
+        "color": 2,                
         "links": [
           {
-            "retailer": 1,
-            "link": "http://www.e-teorema.com/producto.php/776742/bordadora_brother_pe430"
-          }                                                    
+            "retailer": 2,
+            "link": "https://www.staples.com.ar/new_product.asp?sku=CAIBHBT500A&"
+          },    
+          {
+            "retailer": 5,
+            "link": "https://articulo.mercadolibre.com.ar/MLA-629898669-tinta-brother-amarillo-original-bt-5001y-hasta-5000-paginas-_JM"
+          }                                                
         ]
       },     
       {
         "id": 7,
-        "nombre": "PE7700",
-        "descuento": "25%",
+        "nombre": "Botella de tinta Brother BTD60BK",
+        "color": 2,                
         "links": [
           {
-            "retailer": 21,
-            "link": "mailto:seminarios@brother.com.ar?subject=HotSale%20PE7700&body=Por%20favor%20completá%20en%20este%20email%20tu%20nombre%20y%20apellido%20y%20nos%20pondremos%20en%20contacto%20a%20la%20brevedad!"
-          }                                                       
+            "retailer": 2,
+            "link": "https://www.staples.com.ar/new_product.asp?sku=CAIBHBTD60N&"
+          },    
+          {
+            "retailer": 5,
+            "link": "https://articulo.mercadolibre.com.ar/MLA-733297269-tinta-brother-negra-original-bt-d60bk-hasta-6500-paginas-_JM"
+          },
+          {
+            "retailer": 4,
+            "link": "https://www.gruponucleo.com.ar/producto/brother-btd60bk-negro-botella-p-dcp-t310-dcp-t510w-dcp-t710w--6500pag-/prod_id=42351/GrupoNucleo.aspx"
+          },                                                           
         ]
       }                            
 

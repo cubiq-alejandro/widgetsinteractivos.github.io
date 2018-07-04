@@ -141,7 +141,7 @@
           <div class="card mb-4">
             <div class="card-body p-0">
               <a href="#" class="producto" data-producto="6">
-                <img src="assets/4-tinta-cian.png" id="imagen6" class="img-fluid pb-1">
+                <img src="assets/4-tinta-amarilla.png" id="imagen6" class="img-fluid pb-1">
               </a>  
               <button type="button" class="btn btn-lg btn-block btn-primary btn-color-2 producto" data-producto="6">COMPRAR</button>
             </div>
@@ -240,14 +240,9 @@
   
              var nombre_retail = re.nombre;
              var imagen_retail = re.imagen;
-             var link = producto.links[i].link;
-             
-             if(link.search("mailto") != -1){
-               $("#retailers").append('<div class="col-md-6 text-center">' + '<img class="img-fluid" src="' + imagen_retail + '">' + '<a href="'+ link +'" class="btn btn-block btn-outline-secondary btn-sm">' +  'COMPRAR'  + '</a>'  + '</div>')     
-             } else {
-               $("#retailers").append('<div class="col-md-6 text-center">' + '<img class="img-fluid" src="' + imagen_retail + '">' + '<a href="'+ link +'" class="btn btn-block btn-outline-secondary btn-sm" target="_blank">' +  'COMPRAR'  + '</a>'  + '</div>')     
-             } 
-             
+             var link = producto.links[i].link;             
+
+             $("#retailers").append('<div class="col-md-6 text-center">' + '<img class="img-fluid" src="' + imagen_retail + '">' + '<a href="'+ link +'"  target="_blank" class="btn btn-block btn-color-' + producto.color + ' btn-sm">' +  'COMPRAR'  + '</a>'  + '</div>')                  
           }
   
           // Mostrar modal

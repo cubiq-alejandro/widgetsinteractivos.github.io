@@ -35,39 +35,63 @@ html {
 
   .btn-color-1 {
     background-color: #EB0079;
-    opacity: 0.8;
-    border: 0px;
-  } 
-
-  .btn-color-1:hover {
-    background-color: #EB0079;    
-    border: 0px;
-    opacity: 1;
-  }   
-  .btn-color-1:active {
-    background-color: #EB0079;    
-    border: 0px;
-    opacity: 1;
-  }   
-  .btn-color-1:focus {
-    background-color: #EB0079;    
-    border: 0px;
-    opacity: 1;
-  }       
-
+    border-color: #EB0079;
+    color: #fff;
+  }
+  .btn-color-1:hover,
+  .btn-color-1:focus,
+  .btn-color-1:active,
+  .btn-color-1.active {
+    background-color: #d2006c !important;
+    border-color: #b8005f !important;
+    color: #fff;
+  }
+  .btn-color-1.disabled:hover,
+  .btn-color-1.disabled:focus,
+  .btn-color-1.disabled:active,
+  .btn-color-1.disabled.active,
+  .btn-color-1[disabled]:hover,
+  .btn-color-1[disabled]:focus,
+  .btn-color-1[disabled]:active,
+  .btn-color-1[disabled].active,
+  fieldset[disabled] .btn-color-1:hover,
+  fieldset[disabled] .btn-color-1:focus,
+  fieldset[disabled] .btn-color-1:active,
+  fieldset[disabled] .btn-color-1.active {
+    background-color: #EB0079;
+    border-color: #EB0079;
+    color: #fff;
+  }
   
-
   .btn-color-2 {
     background-color: #7D00FF;
-    opacity: 0.8;
-    border: 0px;
-  } 
-
-  .btn-color-2:hover, .btn-color-2:active {
+    border-color: #7D00FF;
+    color: #fff;
+  }
+  .btn-color-2:hover,
+  .btn-color-2:focus,
+  .btn-color-2:active,
+  .btn-color-2.active {
+    background-color: #7100e6 !important;
+    border-color: #6400cc !important;
+    color: #fff;
+  }
+  .btn-color-2.disabled:hover,
+  .btn-color-2.disabled:focus,
+  .btn-color-2.disabled:active,
+  .btn-color-2.disabled.active,
+  .btn-color-2[disabled]:hover,
+  .btn-color-2[disabled]:focus,
+  .btn-color-2[disabled]:active,
+  .btn-color-2[disabled].active,
+  fieldset[disabled] .btn-color-2:hover,
+  fieldset[disabled] .btn-color-2:focus,
+  fieldset[disabled] .btn-color-2:active,
+  fieldset[disabled] .btn-color-2.active {
     background-color: #7D00FF;
-    border: 0px;
-    opacity: 1;
-  }   
+    border-color: #7D00FF;
+    color: #fff;
+  }
   
   .border-top { border-top: 1px solid #e5e5e5; }
   .border-bottom { border-bottom: 1px solid #e5e5e5; }
