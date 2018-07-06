@@ -3,6 +3,7 @@ var productos = [
         "id": 1,
         "nombre": "DCP-T310W",
         "color": 1,
+        "descripcion": "",
         "links": [
           {
             "retailer": 4,
@@ -25,7 +26,8 @@ var productos = [
     {
         "id": 2,
         "nombre": "DCP-T510W",
-        "color": 1,        
+        "color": 1,       
+        "descripcion": "", 
         "links": [
           {
             "retailer": 4,
@@ -57,6 +59,7 @@ var productos = [
         "id": 3,
         "nombre": "DCP-T710W",
         "color": 1,        
+        "descripcion": "",
         "links": [    
           {
             "retailer": 4,
@@ -80,6 +83,7 @@ var productos = [
         "id": 4,
         "nombre": "Botella de tinta Brother BT5001C",
         "color": 2,        
+        "descripcion": "",
         "links": [
           {
             "retailer": 2,
@@ -94,7 +98,8 @@ var productos = [
       {
         "id": 5,
         "nombre": "Botella de tinta Brother BT5001M",
-        "color": 2,                
+        "color": 2,               
+        "descripcion": "", 
         "links": [
           {
             "retailer": 2,
@@ -109,7 +114,8 @@ var productos = [
       {
         "id": 6,
         "nombre": "Botella de tinta Brother BT5001Y",
-        "color": 2,                
+        "color": 2,           
+        "descripcion": "",     
         "links": [
           {
             "retailer": 2,
@@ -125,6 +131,7 @@ var productos = [
         "id": 7,
         "nombre": "Botella de tinta Brother BTD60BK",
         "color": 2,                
+        "descripcion": "",
         "links": [
           {
             "retailer": 2,

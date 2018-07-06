@@ -25,6 +25,11 @@ html {
     transform: scale(1.1);
   }     
   
+  .info {    
+    font-weight: 450;
+    font-size: 15px;
+  } 
+
   .container {
     max-width: 960px;
   } 
