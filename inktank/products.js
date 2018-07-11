@@ -3,7 +3,7 @@ var productos = [
         "id": 1,
         "nombre": "DCP-T310W",
         "color": 1,
-        "descripcion": "<ul><li>Practicidad: ADF de hasta 20 hojas.<li>Alto rendimiento: ahorrá en grande, botellas de tintas incluidas.<li>Diseño compacto: tanque de tinta frontal fácil de usar.<li>Calidad: resultados en colores vívidos y calidad fotográfica.<li>Productividad: rápida velocidad de impresión<li>Conectividad inalámbrica: ideal para oficinas y grupos de trabajo pequeños.<li>Bandeja bypass trasera hasta 300grs</ul>",
+        "descripcion": "<ul><li>Calidad: resultados en colores vívidos y calidad fotográfica.</li><li>Alto rendimiento: Ahorrá en grande, botellas de tintas incluidas.</li><li>Diseño compacto: tanque de tinta frontal fácil de usar.</li><li>Bandeja bypass trasera hasta 300grs</li><li>Productividad: rápida velocidad de impresión</li></ul>",
         "links": [
           {
             "retailer": 4,
@@ -83,7 +83,7 @@ var productos = [
         "id": 4,
         "nombre": "Botella de tinta Brother BT5001C",
         "color": 2,        
-        "descripcion": "Botellas de ultra alto rendimiento. Hasta 6.500 páginas en negro",
+        "descripcion": "Botellas de ultra alto rendimiento. Hasta 5.000 páginas a color",
         "links": [
           {
             "retailer": 2,
@@ -131,7 +131,7 @@ var productos = [
         "id": 7,
         "nombre": "Botella de tinta Brother BTD60BK",
         "color": 2,                
-        "descripcion": "Botellas de ultra alto rendimiento. Hasta 5.000 páginas a color",
+        "descripcion": "Botellas de ultra alto rendimiento. Hasta 6.500 páginas en negro",
         "links": [
           {
             "retailer": 2,
