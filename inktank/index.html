@@ -185,6 +185,13 @@
           <h6 class="text-center">INSUMOS ORIGINALES BROTHER DE ULTRA ALTO RENDIMIENTO</h6>
         </div>                  
     </div>       
+
+   <div class="row">
+      <div class="col-md-12 col-xs-12 pb-4" style="padding-right: 1.8rem!important; padding-left: 1.8rem!important;">
+         <input id="pac-input" class="controls" type="text" placeholder="Ingresá un barrio, ciudad o dirección">
+         <div id="map"></div>
+      </div>
+   </div>    
     
     <div class="row mx-auto">
         <div class="col-sm-12">
@@ -231,11 +238,14 @@
       </div>
     </div>      
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARF6J4fYlpu5cKqUfcbdoQ0iH-fCYWIx8&libraries=places"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
     <script src="data.js"></script>
-    
+    <script src="map.js"></script>
+
     <script>
         $(".producto").click(function(e) {
 
@@ -269,8 +279,7 @@
   
              var nombre_retail = re.nombre;
              var imagen_retail = re.imagen;
-             var link = producto.links[i].link;     
-             
+             var link = producto.links[i].link;                  
              
              $("#retailers").append('<div class="col-md-6 text-center">' + '<img class="img-fluid" src="' + imagen_retail + '">' + '<a href="'+ link +'"  target="_blank" class="btn btn-block btn-color-' + producto.color + ' btn-sm">' +  'COMPRAR'  + '</a>'  + '</div>')                  
           }
