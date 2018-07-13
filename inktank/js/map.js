@@ -28,7 +28,7 @@ function getLocations(cb) {
 function initMap(position) {
 
     map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 13,
+        zoom: 11,
         center: {
             lat: -34.6209276,
             lng: -58.4458738
@@ -52,7 +52,7 @@ function initMap(position) {
         });
     
         map.panTo(center);
-        map.setZoom(13);    
+        map.setZoom(10);    
         position.setMap(map);        
     }
 
