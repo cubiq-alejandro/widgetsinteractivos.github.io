@@ -69,7 +69,7 @@ function initMap(position) {
             });
 
             google.maps.event.addListener(marker, 'click', function(evt) {
-              infoWin.setContent(location.nombre + '<br>' + location.direccion + '<br>' + location.localidad);
+              infoWin.setContent(location.nombre + '<br>' + location.direccion + '<br>' + location.localidad + '<br>' + location.provincia + '<br>' + location.telefono + '<br>' + location.email );
               infoWin.open(map, marker);
             })
             return marker;
