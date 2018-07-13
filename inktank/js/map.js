@@ -76,9 +76,7 @@ function initMap(position) {
           });
         
           // Add a marker clusterer to manage the markers.
-          var markerCluster = new MarkerClusterer(map, markers, {
-            imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
-          });      
+          var markerCluster = new MarkerClusterer(map, markers);      
     })     
     
     // Create the search box and link it to the UI element.
