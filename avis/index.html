@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>TakeBit - Home One</title>
+    <title>Avis Budget Group &#8211; HUB Communication</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
@@ -12,6 +12,9 @@
     <!-- Place favicon.ico in the root directory -->
     <!-- all css here -->
     <!-- bootstrap v3.3.7 css -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- animate css -->
     <link rel="stylesheet" href="assets/css/animate.css">
@@ -35,7 +38,7 @@
     <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
-<body>
+<body id="page-top">
     <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -49,7 +52,7 @@
 
                     <div class="col-lg-2 col-sm-3 col-8">
                         <div class="geta_quote">
-                            <a href="#">
+                            <a href="#page-top"  class="js-scroll-trigger">
                                 <img src="assets/images/logo.png">
                             </a>
                         </div>
@@ -57,9 +60,9 @@
 
                     <div class="col-lg-10 col-sm-9 d-none d-sm-block">
                         <ul class="mainmenu d-flex justify-content-end">
-                            <li class="active"><a href="#">INICIO</a></li>
-                            <li><a href="#">HERRAMIENTAS</a></li>
-                            <li><a href="#">CONTÁCTENOS</a></li>
+                            <li class="active"><a href="#page-top" class="js-scroll-trigger">INICIO</a></li>
+                            <li><a href="#tools" class="js-scroll-trigger">HERRAMIENTAS</a></li>
+                            <li><a href="#contact" class="js-scroll-trigger">CONTÁCTENOS</a></li>
                         </ul>
                     </div>
 
@@ -78,9 +81,9 @@
                     <div class="row">
                         <div class="col-12">
                             <ul class="metismenu">
-                                <li><a href="#">INICIO</a></li>
-                                <li><a href="#">HERRAMIENTAS</a></li>
-                                <li><a href="#">CONTÁCTENOS</a></li>
+                                <li><a href="#page-top" class="js-scroll-trigger">INICIO</a></li>
+                                <li><a href="#tools" class="js-scroll-trigger">HERRAMIENTAS</a></li>
+                                <li><a href="#contact" class="js-scroll-trigger">CONTÁCTENOS</a></li>
                             </ul>
                         </div>
                     </div>
@@ -109,7 +112,7 @@
     <!-- slider-area end -->
 
 
-    <div class="container">
+    <div class="container" id="tools">
         <div class="row">
             <div class="col-lg-12 col-sm-12 col-12 pt-4 mt-4">
                 <h4 class="text-center">Todas las herramientas que necesitas en un solo lugar.</h4>
@@ -238,48 +241,49 @@
     </div>
     <!-- featured-area end -->
 
-
-
-
-
     <!-- contact-area start -->
-    <div class="contact-area">
+    <div class="contact-area" id="contact" >
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-6">
-                    <img src="assets/images/bg/2.jpg" alt="">
-                </div>
-                <div class="col-lg-6 col-6">
-                    <h2>Request A Call Back</h2>
-                    <form action="index.html#">
-                        <div class="row">
-                            <div class="col-sm-6 col-12">
-                                <input type="text" placeholder="Name">
+                <div class="col-6">
+                 
+                </div>  
+                <div class="col-6">
+
+                    <h2 style="text-align: left;"><span class="contact-title">CONTÁCTENOS</span></h2>
+
+                    <form method="post" action="/request.php">
+                        <div class="form-group">
+                            <label for="name" class="contact-label">Nombre y Apellido</label>
+                            <input type="text" class="form-control" id="name" name="name" required>                            
+                        </div>
+                        <div class="form-row form-group">
+                            <div class="col-xs-12 col-6">
+                                <label for="message" class="contact-label">Email * </label>
+                                <input type="mail" class="form-control" name="email" required>
                             </div>
-                            <div class="col-sm-6 col-12">
-                                <input type="email" placeholder="Email">
-                            </div>
-                            <div class="col-sm-6 col-12">
-                                <input type="text" placeholder="Phone">
-                            </div>
-                            <div class="col-sm-6 col-12">
-                                <input type="text" placeholder="Subject">
-                            </div>
-                            <div class="col-12">
-                                <textarea cols="30" rows="10" placeholder="Massage"></textarea>
-                            </div>
-                            <div class="col-12">
-                                <button>Submit Now</button>
+                            <div class="col-xs-12 col-6 ">
+                                <label for="gsa" class="contact-label">GSA o Licencia *</label>
+                                <select class="form-control" id="gsa" name="type" required>
+                                    <option value="">Seleccione</option>
+                                    <option value="GSA">GSA</option>
+                                    <option value="Licencia">Licencia</option>
+                                </select>
                             </div>
                         </div>
-                    </form>               
-                </div>
-            </div>
-        </div>
+                        <div class="form-group" class="contact-label">
+                            <label for="message" class="contact-label">Mensaje o comentario * </label>
+                            <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+                        </div>                    
 
+                        <button type="submit" class="btn btn-orange">ENVIAR</button>
+                    </form>
+                </div>                                                  
+            </div> 
+   
+        </div>
     </div>
     <!-- contact-area end -->
-
 
     <!-- footer-area start -->
     <footer class="footer-area">
@@ -287,7 +291,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 copyright">
-                        <p>© © 2018 Avis Budget Group System, LLC</p>
+                        <p>© 2018 Avis Budget Group System, LLC</p>
                     </div>
                 </div>
             </div>
@@ -309,6 +313,9 @@
     <script src="assets/js/mailchimp.js"></script>
     <!-- metisMenu.min.js -->
     <script src="assets/js/metisMenu.min.js"></script>
+
+
+    <script src="assets/js/jquery.easing.min.js"></script>    
 
 
     <!-- plugins js -->
