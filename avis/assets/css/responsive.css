@@ -11,7 +11,7 @@
         width: 865px;
     }
     .contact-area {
-        padding: 89px 0;
+        padding: 0;
     }
     .contact-area:before {
         height: 85%;
@@ -183,8 +183,8 @@
         line-height: 40px;
     }
     .contact-area{
-        padding: 120px 0px;
-        background: #db751a;
+        /*padding: 120px 0px;*/
+        background: #384B5C;
     }
     .contact-area:before{
         display: none;
@@ -310,7 +310,7 @@
         line-height: 34px;
     }
     .contact-area{
-        padding: 100px 0px;
+        /*padding: 100px 0px;*/
         background: #384B5C;
     }
     .contact-area:before{

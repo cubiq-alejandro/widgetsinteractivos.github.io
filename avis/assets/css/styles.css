@@ -330,6 +330,19 @@ a#scrollUp:hover {
     /*border-top: 2px #f17d02 solid;*/
 }
 
+.mainmenu li > a:before{
+    position: absolute;
+    left: 0;
+    top: -12px;
+    width: 0;
+    height: 4px;
+    background: #f17d02;
+    content: "";
+}
+
+.mainmenu li:hover > a:before{
+    width: 100%;
+}
 .mainmenu li > ul{
     position: absolute;
     left: 20px;
@@ -383,7 +396,7 @@ a#scrollUp:hover {
 
 
 .slider-area{
-    margin-top: 85px;
+    margin-top: 110px;
 }
 
 .slider-items{
@@ -398,7 +411,7 @@ a#scrollUp:hover {
     height: 100%;
     background: #242424;
     content: "";
-    opacity: .5;
+    opacity: .1;
 }
 .slider-items img{
     visibility: hidden;
@@ -2356,9 +2369,9 @@ text.highcharts-credits {
 
 
 .btn-orange { 
-color: #FFFFFF; 
-background-color: #F17D02; 
-border-color: #F17D02; 
+    color: #FFFFFF; 
+    background-color: #F17D02; 
+    border-color: #F17D02; 
 } 
 
 .btn-orange:hover, 
@@ -2366,15 +2379,15 @@ border-color: #F17D02;
 .btn-orange:active, 
 .btn-orange.active, 
 .open .dropdown-toggle.btn-orange { 
-color: #FFFFFF; 
-background-color: #f17d02; 
-border-color: #F17D02; 
+    color: #FFFFFF; 
+    background-color: #f17d02; 
+    border-color: #F17D02; 
 } 
 
 .btn-orange:active, 
 .btn-orange.active, 
 .open .dropdown-toggle.btn-orange { 
-background-image: none; 
+    background-image: none; 
 } 
 
 .btn-orange.disabled, 
@@ -2392,8 +2405,8 @@ fieldset[disabled] .btn-orange:active,
 .btn-orange.disabled.active, 
 .btn-orange[disabled].active, 
 fieldset[disabled] .btn-orange.active { 
-background-color: #F17D02; 
-border-color: #F17D02; 
+    background-color: #F17D02; 
+    border-color: #F17D02; 
 } 
 
 .btn-orange .badge { 
@@ -2402,16 +2415,70 @@ background-color: #FFFFFF;
 }
 
 .contact-title{
-font-size: 30px;
-color: #ffffff;    
-font-family: Montserrat, Arial, Helvetica, sans-serif;
-font-weight: 300;
-letter-spacing: 0px;
-font-style: normal;    
+    font-size: 30px;
+    color: #ffffff;    
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    letter-spacing: 0px;
+    font-style: normal;    
 }
 
 .contact-label{
-font-family: Montserrat, Arial, Helvetica, sans-serif;  
-font-size: 16px;
-color: #ffffff;    
+    font-family: Montserrat, Arial, Helvetica, sans-serif;  
+    font-size: 16px;
+    color: #ffffff;    
 }
+
+.metismenu li a {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;  
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;        
+}
+
+@media (max-width: 619px){  
+    .container-header{
+        padding: 12px 30px 12px 12px;
+    
+    }
+    .form-contact{
+        padding-top: 15px;
+    }
+    .form-contact-wrapper{
+        padding: 25px;
+    }       
+}
+
+@media screen and (max-width: 920px) and (min-width: 620px) {
+    .container-header{
+        padding: 12px 30px 12px 25px;    
+    }
+    .form-contact{
+        padding: 30px 30px 30px 30px;
+    }    
+    .form-contact-wrapper{
+        padding: 0px 120px 0px 120px;
+    }      
+}
+
+@media (min-width: 920px){  
+    .container-header{
+        padding: 12px 130px 12px 130px;    
+    }
+    .form-contact{
+        padding: 30px 30px 30px 30px;
+    } 
+    .form-contact-wrapper{
+        padding: 0px 120px 0px 120px;
+    }          
+}
+
+
+
+.text-help{
+    font-family: Montserrat, Arial, Helvetica, sans-serif;  
+    font-size: 20px;
+    margin-top: 20px;
+     
+}
+
